@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    color: #eee;
+    background-color: black;
+    color-scheme: dark; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+fieldset {
+    margin: 5rem;
+    border: 1px white solid;
+}
+
+legend {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 10px;
+}
+
+.left {
+    background-color: #D3649F;
+    color: rgb(46, 46, 46);
+    height: 100vh;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left h1 {
+    font-size: 3rem;
+}
+
+.btn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #3EB489;
+    margin: 1rem;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.skills input {
+    margin: 7.5px;
+    font-size: medium;
+}
+
+#submit {
+    font-size: 20px;
+    color: #eee;
+    margin: 20px 0 0 20px;
+}

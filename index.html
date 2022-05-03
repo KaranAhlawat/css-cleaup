@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Experiment 5 - Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="exp-grid">
+        <div class="left">
+            <h1>Forms Application</h1>
+            <strong style="font-size: 2rem;">Go to a form!</strong>
+            <ul>
+                <li class="btn"><a href="#quiz">Quiz Form</a></li>
+                <li class="btn"><a href="#feedback">Feedback Form</a></li>
+                <li class="btn"><a href="#survey">Survey Form</a></li>
+                <li class="btn"><a href="#user">User Profile Form</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div id="quiz">
+                <fieldset>
+                    <legend>Quiz Form</legend>
+
+                    <p>
+                        <strong>Q1.</strong> Which is not of the following is algorithm of
+                        greedy approach?
+                    </p>
+                    <form>
+                        <input type="radio" id="q1-option1" name="BFA" value="HTML" />
+                        <label for="q1-option1">Bellman-Ford Algorithm</label><br />
+                        <input type="radio" id="q1-option2" name="PA" value="CSS" />
+                        <label for="q2-option1">Prim's Algorithm</label><br />
+                        <input type="radio" id="q1-option3" name="fav_language" value="JavaScript" />
+                        <label for="q1-option3">Kruskal's algorithm</label><br />
+                        <input type="radio" name="fav_language" id="q1-option4" />
+                        <label for="q1-option4">Dijkistra's Algorithm</label>
+                    </form>
+
+                    <p>
+                        <strong>Q2.</strong> What is/are the properties of Minimum Spanning
+                        Tree?
+                    </p>
+                    <form>
+                        <input type="checkbox" id="html" name="fav_language" />
+                        <label for="html">All the edges must be connected</label><br />
+                        <input type="checkbox" id="css" name="fav_language" />
+                        <label for="css">Graph must be acyclic</label><br />
+                        <input type="checkbox" id="javascript" name="q2" />
+                        <label for="javascript">Graph Must be directed</label><br />
+                        <input type="checkbox" id="option 4" />
+                        <label for="option 4">Graph can or cannot be weighted</label>
+                    </form>
+
+                    <p>
+                        <strong>Q3. </strong>Is it possible to traverse a Binary tree with
+                        constant space?
+                    </p>
+                    <form>
+                        <input type="radio" id="q3-option1" name="binarytree" />
+                        <label for="q3-option1">True</label> <br />
+                        <input type="radio" id="q3-option2" name="binarytree" />
+                        <label for="q3-option2">False</label>
+                    </form>
+
+                    <p>
+                        <strong>Q4.</strong> Which of the following data structure is used to
+                        implement DFS?
+                    </p>
+                    <form>
+                        <input type="radio" id="q4-option1" name="q4" />
+                        <label for="q4-option1">Linked List</label><br />
+                        <input type="radio" id="q4-option2" name="q4" />
+                        <label for="q4-option1">Tree</label><br />
+                        <input type="radio" id="q4-option3" name="q4" />
+                        <label for="q4-option3">Stack</label><br />
+                        <input type="radio" name="q4" id="q4-option4" />
+                        <label for="q4-option4">Heap</label>
+                    </form>
+
+                    <p>
+                        <strong>Q5.</strong> _____________ is a matching with the largest
+                        number of edges.
+                    </p>
+                    <form>
+                        <input type="radio" id="q5-option1" name="q5" />
+                        <label for="q5-option1">Maximum bipartite matching</label><br />
+                        <input type="radio" id="q5-option2" name="q5" />
+                        <label for="q5-option1">Non-bipartite matching</label><br />
+                        <input type="radio" id="q5-option3" name="q5" />
+                        <label for="q5-option3">Stable marriage</label><br />
+                        <input type="radio" name="q5" id="q5-option4" />
+                        <label for="q5-option4">Simplex</label>
+                        <input type="radio" id="q5-option2" name="q5" />
+                        <label for="q5-option1">Non-bipartite matching</label><br />
+                        <input type="radio" id="q5-option3" name="q5" />
+                        <label for="q5-option3">Stable marriage</label><br />
+                        <input type="radio" name="q5" id="q5-option4" />
+                        <label for="q5-option4">Simplex</label>
+
+                    </form>
+
+                    <button id="submit">Submit Quiz</button>
+                </fieldset>
+            </div>
+
+            <div id="feedback">
+                <fieldset>
+                    <legend>Feedback Form</legend>
+                    <form>
+                        <p>
+                            <strong>Q1. </strong>
+                            How was your experience with our service?
+                        </p>
+                        <input type="text">
+
+                        <p>
+                            <strong>Q2. </strong>
+                            How would you rate our service on a scale from one to ten?
+                        </p>
+                        <input type="range" min="0" max="10">
+
+                        <p>
+                            <strong>Q3. </strong>
+                            How likely are you to recommend the service to your friends?
+                        </p>
+                        <label>1</label>
+                        <input type="radio" value="1">
+                        <label>2</label>
+                        <input type="radio" value="2">
+                        <label>3</label>
+                        <input type="radio" value="3">
+                        <label>4</label>
+                        <input type="radio" value="4">
+                        <label>5</label>
+                        <input type="radio" value="5">
+
+                        <p>
+                            <strong>Q4. </strong>
+                            What did you like about our service?
+                        </p>
+                        <textarea></textarea>
+
+                        <p>
+                            <strong>Q5. </strong>
+                            What did you dislike about our service?
+                        </p>
+                        <textarea></textarea>
+                        <br>
+                        <button id="submit">Submit Feeback</button>
+                    </form>
+                </fieldset>
+            </div>
+
+            <div id="survey">
+                <fieldset>
+                    <legend>Survey Form</legend>
+                    <form id="form">
+
+                        <!-- Details -->
+                        <div class="form-control">
+                            <label for="name" id="label-name">
+                                Name
+                            </label>
+
+                            <!-- Input Type Text -->
+                            <input type="text" id="name" placeholder="Enter your name" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email" id="label-email">
+                                Email
+                            </label>
+
+                            <!-- Input Type Email-->
+                            <input type="email" id="email" placeholder="Enter your email" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="age" id="label-age">
+                                Age
+                            </label>
+
+                            <!-- Input Type Text -->
+                            <input type="text" id="age" placeholder="Enter your age" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="role" id="label-role">
+                                Which option best describes you?
+                            </label>
+
+                            <!-- Dropdown options -->
+                            <select name="role" id="role">
+                                <option value="student">Student</option>
+                                <option value="intern">Intern</option>
+                                <option value="professional">
+                                    Professional
+                                </option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-control">
+                            <label>
+                                Would you recommend this BootCamp
+                                to a colleagues?
+                            </label>
+
+                            <!-- Input Type Radio Button -->
+                            <label for="recommed-1">
+                                <input type="radio" id="recommed-1" name="recommed">Sure</input>
+                            </label>
+                            <label for="recommed-2">
+                                <input type="radio" id="recommed-2" name="recommed">Discourage</input>
+                            </label>
+                            <label for="recommed-3">
+                                <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+                            </label>
+                        </div>
+
+                        <div class="form-control">
+                            <label>Languages and Frameworks learnt
+                                <small>(Check all that apply)</small>
+                            </label>
+                            <!-- Input Type Checkbox -->
+                            <label for="inp-1">
+                                <input type="checkbox" name="inp">Scala</input></label>
+                            <label for="inp-2">
+                                <input type="checkbox" name="inp">Ruby</input></label>
+                            <label for="inp-3">
+                                <input type="checkbox" name="inp">C#</input></label>
+                            <label for="inp-4">
+                                <input type="checkbox" name="inp">Java</input></label>
+                            <label for="inp-7">
+                                <input type="checkbox" name="inp">Spring</input></label>
+                            <label for="inp-5">
+                                <input type="checkbox" name="inp">Python</input></label>
+                            <label for="inp-6">
+                                <input type="checkbox" name="inp">JavaScript</input></label>
+                            <label for="inp-7">
+                                <input type="checkbox" name="inp">React</input></label>
+                            <label for="inp-7">
+                                <input type="checkbox" name="inp">Angular</input></label>
+                            <label for="inp-7">
+                                <input type="checkbox" name="inp">Django</input></label>
+
+                        </div>
+
+                        <div class="form-control">
+                            <label for="comment">
+                                Any comments or suggestions
+                            </label>
+
+                            <!-- multi-line text input control -->
+                            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+                            </textarea>
+                        </div>
+
+                        <!-- Multi-line Text Input Control -->
+                        <button type="submit" value="submit" id="submit">
+                            Submit Survey
+                        </button>
+                    </form>
+                </fieldset>
+            </div>
+
+            <div id="user">
+                <fieldset>
+                    <legend>User Profile Form</legend>
+
+                    <!-- Create Form -->
+                    <form id="form">
+
+                        <!-- Details -->
+                        <div class="form-control">
+                            <label for="name" id="label-name">
+                                Name
+                            </label>
+
+                            <!-- Input Type Text -->
+                            <input type="text" id="name" placeholder="Enter your name" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email" id="label-email">
+                                Email
+                            </label>
+
+                            <!-- Input Type Email-->
+                            <input type="email" id="email" placeholder="Enter your email" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="age" id="label-age">
+                                Age
+                            </label>
+
+                            <!-- Input Type Text -->
+                            <input type="text" id="age" placeholder="Enter your age" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="Eduy" id="edu">
+                                Educational Qualification
+                            </label>
+
+                            <!-- Input Type Text -->
+                            <input type="text" id="age" placeholder="Enter Qualification" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="Eduy" id="course">
+                                Course
+                            </label>
+
+                            <!-- Input Type Text -->
+                            <input type="text" id="course" placeholder="Enter Course" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="Eduy" id="edu">
+                                University/School
+                            </label>
+
+                            <!-- Input Type Text -->
+                            <input type="text" id="School" placeholder="Enter University" />
+                        </div>
+
+                        <label>
+                            Skills
+                        </label> <br>
+                        <div class="skills">
+                            <input type="button" value="Java">
+                            <input type="button" value="html">
+                            <input type="button" value="CSS">
+                            <input type="button" value="JavaScript">
+                            <input type="button" value="NodeJs">
+                            <input type="button" value="ExpressJS">
+                            <input type="button" value="MongoDB">
+                            <input type="button" value="Django">
+                            <input type="button" value="Python">
+                            <input type="button" value="GraphQL">
+                            <input type="button" value="Docker">
+                            <input type="button" value="Kafka">
+                        </div>
+
+                        <!-- Multi-line Text Input Control -->
+                        <button type="submit" value="submit" id="submit">
+                            Submit User Profile
+                        </button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
